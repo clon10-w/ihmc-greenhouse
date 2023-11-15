@@ -4,7 +4,9 @@
     "dependencies": {
         "core": "*",
         "radio": "*",
-        "microphone": "*"
+        "microphone": "*",
+        "pxt-DHT11_DHT22": "github:alankrantas/pxt-dht11_dht22#v0.0.3",
+        "pxt-esp8266": "github:cytrontechnologies/pxt-esp8266#v2.0.1"
     },
     "files": [
         "main.blocks",
