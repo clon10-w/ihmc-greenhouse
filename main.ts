@@ -33,7 +33,7 @@ namespace IHMCWarmhouse {
     //% weight=29
     //% blockGap=8
     //% blockId=ihmc_upload_thingspeak
-    //% block="Upload to ThingSpeak|Write API key %writeApiKey|Field 1 %field1||Field 2 %field2|Field 3 %field3|Field 4 %field4|Field 5 %field5|Field 6 %field6|Field 7 %field7|Field 8 %field8"
+    //% block="Upload to ThingSpeak|Write API key %writeApiKey|Field 1 %f1||Field 2 %f2|Field 3 %f3|Field 4 %f4|Field 5 %f5|Field 6 %f6|Field 7 %f7|Field 8 %f8"
     export function altuploadThingspeak(   wAK: string,
                                         f1: number,
                                         f2: number = null,
