@@ -34,7 +34,7 @@ namespace IHMCWarmhouse {
     //% blockGap=8
     //% blockId=ihmc_upload_thingspeak
     //% block="Upload data to ThingSpeak|Write API key %writeApiKey|Field 1 %field1||Field 2 %field2|Field 3 %field3|Field 4 %field4|Field 5 %field5|Field 6 %field6|Field 7 %field7|Field 8 %field8"
-    export function uploadThingspeak(   writeApiKey: string,
+    export function altuploadThingspeak(   writeApiKey: string,
                                         field1: number,
                                         field2: number = null,
                                         field3: number = null,
