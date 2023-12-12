@@ -34,25 +34,28 @@ namespace IHMCWarmhouse {
     //% blockGap=8
     //% blockId=ihmc_upload_thingspeak
     //% block="Upload to ThingSpeak|Write API key %writeApiKey|Field 1 %field1||Field 2 %field2|Field 3 %field3|Field 4 %field4|Field 5 %field5|Field 6 %field6|Field 7 %field7|Field 8 %field8"
-    export function altuploadThingspeak(   writeApiKey: string,
-                                        field1: number,
-                                        field2: number = null,
-                                        field3: number = null,
-                                        field4: number = null,
-                                        field5: number = null,
-                                        field6: number = null,
-                                        field7: number = null,
-                                        field8: number = null  ) {
-        esp8266.uploadThingspeak(writeApiKey,field1,field2,field3,field4,field5,field6,field7,field8)
-        for (let index = 0; index <= 5; index++) {
-            if (!(esp8266.isThingspeakUploaded())) {
-                esp8266.uploadThingspeak(writeApiKey,field1,field2,field3,field4,field5,field6,field7,field8)
-                if (index == 5) {
+    export function altuploadThingspeak(   wAK: string,
+                                        f1: number,
+                                        f2: number = null,
+                                        f3: number = null,
+                                        f4: number = null,
+                                        f5: number = null,
+                                        f6: number = null,
+                                        f7: number = null,
+                                        f8: number = null  ) 
+    {
+        esp8266.uploadThingspeak(wAK,f1,f2,f3,f4,f5,f6,f7,f8)
+        for (let index = 0; index <= 5; index++) 
+        {
+            if (!(esp8266.isThingspeakUploaded())) 
+            {
+                esp8266.uploadThingspeak(wAK,f1,f2,f3,f4,f5,f6,f7,f8)
+                if (index == 5) 
+                {
                     control.reset()
                 }
             }
         }
-        
     }
 
 }
