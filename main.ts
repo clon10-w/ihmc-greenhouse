@@ -82,7 +82,7 @@ namespace IHMCWarmhouse {
         {
             if (!(esp8266.isThingspeakUploaded())) 
             {
-                esp8266.uploadThingspeak(wAK,f1,f2,f3,f4,f5,f6,f7,f8)
+                esp8266.uploadThingspeak(wAKd,fd1,fd2,fd3,fd4,fd5,fd6,fd7,fd8)
             }
             basic.pause(500)
         }
