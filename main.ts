@@ -62,9 +62,9 @@ namespace IHMCWarmhouse {
     //% weight=29
     //% blockGap=8
     //% blockId=ihmc_upload_thingspeak_s
-    //% block="Upload to ThingSpeak|Iter %i|Write API key %wAK|Field 1 %f1||Field 2 %f2|Field 3 %f3|Field 4 %f4|Field 5 %f5|Field 6 %f6|Field 7 %f7|Field 8 %f8"
+    //% block="Upload to ThingSpeak|loopcount %coi|Write API key %wAK|Field 1 %f1||Field 2 %f2|Field 3 %f3|Field 4 %f4|Field 5 %f5|Field 6 %f6|Field 7 %f7|Field 8 %f8"
     export function ctrluploadThingspeak(   
-                                        i: number,
+                                        coi: number = 3,
                                         wAK: string,
                                         f1: number,
                                         f2: number = null,
@@ -76,12 +76,12 @@ namespace IHMCWarmhouse {
                                         f8: number = null  ) 
     {
         esp8266.uploadThingspeak(wAK,f1,f2,f3,f4,f5,f6,f7,f8)
-        for (let index = 0; index <= i; index++) 
+        for (let index = 0; index <= coi; index++) 
         {
             if (!(esp8266.isThingspeakUploaded())) 
             {
                 esp8266.uploadThingspeak(wAK,f1,f2,f3,f4,f5,f6,f7,f8)
-                if (index == i) 
+                if (index == coi) 
                 {
                     control.reset()
                 }
