@@ -63,8 +63,8 @@ namespace IHMCWarmhouse {
     //% weight=29
     //% blockGap=8
     //% blockId=ihmc_upload_loop
-    //% coi.min=1 coi.max=10 coi.defl=2
     //% block="Upload to ThingSpeak (Advance)|Number of trial(s) %coi|Write API key %wAKd|Field 1 %fd1||Field 2 %fd2|Field 3 %fd3|Field 4 %fd4|Field 5 %fd5|Field 6 %fd6|Field 7 %fd7|Field 8 %fd8"
+    //% coi.min=1 coi.max=10 coi.defl=2
     export function ctrluploadThingspeak(   
                                         coi: number,
                                         wAKd: string,
