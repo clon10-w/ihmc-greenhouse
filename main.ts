@@ -61,7 +61,7 @@ namespace IHMCWarmhouse {
     //% subcategory="Upload"
     //% weight=29
     //% blockGap=8
-    //% blockId=ihmc_upload_thingspeak
+    //% blockId=ihmc_upload_thingspeak_s
     //% block="Upload to ThingSpeak|Iter %i|Write API key %wAK|Field 1 %f1||Field 2 %f2|Field 3 %f3|Field 4 %f4|Field 5 %f5|Field 6 %f6|Field 7 %f7|Field 8 %f8"
     export function ctrluploadThingspeak(   
                                         i: number,
