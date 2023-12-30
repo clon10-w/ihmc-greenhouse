@@ -30,6 +30,13 @@ namespace IHMCWarmhouse {
     }
 
     //% subcategory="Upload"
+    //% block="uploaded to ThingSpeak"
+    export function itsud(): boolean
+    { 
+        return esp8266.isThingspeakUploaded()
+    }
+    
+    //% subcategory="Upload"
     //% weight=29
     //% blockGap=8
     //% blockId=ihmc_upload_thingspeak
