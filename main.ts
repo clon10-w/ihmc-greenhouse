@@ -34,7 +34,7 @@ namespace IHMCWarmhouse {
     //% blockGap=8
     //% blockId=ihmc_upload_thingspeak
     //% block="Upload to ThingSpeak|Write API key %wAK|Field 1 %f1||Field 2 %f2|Field 3 %f3|Field 4 %f4|Field 5 %f5|Field 6 %f6|Field 7 %f7|Field 8 %f8"
-    export function altuploadThingspeak(   wAK: string,
+    /*export function altuploadThingspeak(   wAK: string,
                                         f1: number,
                                         f2: number = null,
                                         f3: number = null,
@@ -56,7 +56,7 @@ namespace IHMCWarmhouse {
                 }
             }
         }
-    }
+    }*/
 
     //% subcategory="Upload"
     //% weight=29
