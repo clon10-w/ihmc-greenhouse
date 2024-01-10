@@ -1,5 +1,5 @@
-//% color=190 weight=100 icon="\uf185" block="IHMC Warmhouse"
-namespace IHMCWarmhouse {
+//% color=190 weight=100 icon="\uf185" block="IHMC Greenhouse"
+namespace IHMCGreenhouse {
 
     let result = 0
     let down = 0
