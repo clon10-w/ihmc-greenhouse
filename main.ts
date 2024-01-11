@@ -114,6 +114,7 @@ namespace IHMCGreenhouse {
 
         // Construct the data to send.
         let data = "POST /iot/data/eventAPIKeyJson/" + apiKey 
+        data += " HTTP/1.1\r\n"
         data += "Host: " + "api.cocorobo.hk" + "\r\n"
         data += "Content-Type: " + "application/json" + "\r\n"
         data += "\r\n"
