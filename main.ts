@@ -113,9 +113,8 @@ namespace IHMCGreenhouse {
         if (esp8266.sendCommand("AT+CIPSTART=\"TCP\",\"" + "api.cocorobo.hk" + "\",80", "OK", 60) == false) return
 
         // Construct the data to send.
-        let data = "POST /iot/data/eventAPIKey/" + apiKey 
+        let data = "POST /iot/data/eventAPIKeyJson/" + apiKey 
         data += "Host: " + "api.cocorobo.hk" + "\r\n"
-        data += "Accept: " + "application/json" + "\r\n"
         data += "Content-Type: " + "application/json" + "\r\n"
         data += "\r\n"
         data += "{" + "\r\n"
